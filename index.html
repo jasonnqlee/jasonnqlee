@@ -105,12 +105,13 @@
             border-radius: 15px;
             overflow: hidden;
             cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            will-change: transform, box-shadow;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
+            transform: translate3d(0, -10px, 0);
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
 
@@ -141,8 +142,9 @@
             align-items: center;
             justify-content: center;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             z-index: 2;
+            will-change: opacity;
         }
 
         .project-card:hover .project-overlay {
@@ -159,23 +161,25 @@
             font-size: 1.8rem;
             font-weight: 600;
             margin-bottom: 10px;
-            transform: translateY(20px);
-            transition: transform 0.3s ease 0.1s;
+            transform: translate3d(0, 20px, 0);
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.05s;
+            will-change: transform;
         }
 
         .project-card:hover .project-name {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
         }
 
         .project-description {
             font-size: 1rem;
             opacity: 0.9;
-            transform: translateY(20px);
-            transition: transform 0.3s ease 0.2s;
+            transform: translate3d(0, 20px, 0);
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+            will-change: transform;
         }
 
         .project-card:hover .project-description {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
         }
 
         .project-icon {
