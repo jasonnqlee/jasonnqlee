@@ -1,22 +1,83 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Needle Cap Redesign</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Onion-skin + 3D viewer styles -->
+		<style>
+			.onion-layout {
+				display: flex;
+				gap: 2.5em;
+				align-items: flex-start;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.onion-viewer {
+				flex: 1 1 400px;
+				max-width: 500px;
+			}
+			.onion-container {
+				position: relative;
+				width: 100%;
+				aspect-ratio: 1 / 1;
+				background: #f4f4f4;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+			.onion-container img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				transition: opacity 0.3s ease;
+			}
+			.onion-ghost {
+				opacity: 0.25;
+				filter: grayscale(1);
+			}
+			.onion-current {
+				opacity: 1;
+			}
+			.onion-controls {
+				margin-top: 1em;
+			}
+			.onion-controls input[type="range"] {
+				width: 100%;
+			}
+			.onion-ticks {
+				display: flex;
+				justify-content: space-between;
+				font-size: 0.8em;
+				color: #888;
+				padding: 0 2px;
+			}
+			.onion-details {
+				flex: 1 1 280px;
+				max-width: 350px;
+				padding: 1.5em;
+				background: #fafafa;
+				border-left: 3px solid #666;
+				border-radius: 4px;
+				min-height: 180px;
+			}
+			.onion-details h3 {
+				margin: 0 0 0.3em;
+			}
+			.detail-meta {
+				font-size: 0.85em;
+				color: #888;
+				margin-bottom: 0.8em;
+			}
+			#objCanvas {
+				width: 100%;
+				height: 500px;
+				border-radius: 6px;
+				overflow: hidden;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
-
+ 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+ 
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
 					<header id="header" class="alt style2">
@@ -25,7 +86,7 @@
 							<a href="#menu">Menu</a>
 						</nav>
 					</header>
-
+ 
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
@@ -39,7 +100,7 @@
 							<li><a href="#" class="button fit">Log In</a></li>
 						</ul>
 					</nav>
-
+ 
 				<!-- Banner -->
 				<!-- Note: The "styleN" class below should match that of the header element. -->
 					<section id="banner" class="style2">
@@ -57,15 +118,15 @@
 							</div>
 						</div>
 					</section>
-
+ 
 				<!-- Main -->
 					<div id="main">
-
-						<!-- One -->
+ 
+						<!-- Onion-skin design iteration comparison -->
 						<section id="onion-skin">
 						  <div class="inner">
 						    <header class="major"><h2>Design Iterations</h2></header>
-
+ 
 						    <div class="onion-layout">
 						      <!-- Image stack -->
 						      <div class="onion-viewer">
@@ -73,15 +134,15 @@
 						          <img src="" alt="Previous iteration" class="onion-ghost" id="onionGhost" />
 						          <img src="" alt="Current iteration" class="onion-current" id="onionCurrent" />
 						        </div>
-
+ 
 						        <div class="onion-controls">
 						          <input type="range" id="onionSlider" min="0" max="5" value="0" step="1" />
 						          <div class="onion-ticks">
 						            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
 						          </div>
-							        </div>
-							      </div>
-
+						        </div>
+						      </div>
+ 
 						      <!-- Details panel -->
 						      <div class="onion-details" id="onionDetails">
 						        <h3 id="detailTitle"></h3>
@@ -90,6 +151,14 @@
 						      </div>
 						    </div>
 						  </div>
+						</section>
+ 
+						<!-- 3D Model Viewer -->
+						<section id="model-viewer">
+							<div class="inner">
+								<header class="major"><h2>Final 3D Model</h2></header>
+								<div id="objCanvas"></div>
+							</div>
 						</section>
 
 						<!-- Two -->
