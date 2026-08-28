@@ -62,14 +62,35 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Constraints</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna.</p>
-								</div>
-							</section>
+						<section id="onion-skin">
+						  <div class="inner">
+						    <header class="major"><h2>Design Iterations</h2></header>
+
+						    <div class="onion-layout">
+						      <!-- Image stack -->
+						      <div class="onion-viewer">
+						        <div class="onion-container">
+						          <img src="" alt="Previous iteration" class="onion-ghost" id="onionGhost" />
+						          <img src="" alt="Current iteration" class="onion-current" id="onionCurrent" />
+						        </div>
+
+						        <div class="onion-controls">
+						          <input type="range" id="onionSlider" min="0" max="5" value="0" step="1" />
+						          <div class="onion-ticks">
+						            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+						          </div>
+							        </div>
+							      </div>
+
+						      <!-- Details panel -->
+						      <div class="onion-details" id="onionDetails">
+						        <h3 id="detailTitle"></h3>
+						        <p class="detail-meta" id="detailMeta"></p>
+						        <p id="detailDesc"></p>
+						      </div>
+						    </div>
+						  </div>
+						</section>
 
 						<!-- Two -->
 							<section id="two" class="spotlights">
