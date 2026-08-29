@@ -5,14 +5,14 @@
 }
 
 .onion-viewer {
-    width: 800px !important;
-    max-width: 800px !important;
+    width: 400px !important;
+    max-width: 400px !important;
     flex: none !important;
 }
 
 .onion-container {
-    width: 800px !important;
-    height: 800px !important;
+    width: 400px !important;
+    height: 400px !important;
     aspect-ratio: auto !important;
     position: relative;
     background:  #f4f4f4;
