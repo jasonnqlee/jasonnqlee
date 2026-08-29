@@ -1,80 +1,3 @@
-		<!-- Onion-skin + 3D viewer styles -->
-		<style>
-			.onion-layout {
-				display: flex;
-				gap: 2.5em;
-				align-items: flex-start;
-				flex-wrap: wrap;
-				justify-content: center;
-			}
-			.onion-viewer {
-				flex: 1 1 400px;
-				max-width: 500px;
-			}
-			.onion-container {
-				position: relative;
-				width: 100%;
-				aspect-ratio: 1 / 1;
-				background: #f4f4f4;
-				border-radius: 6px;
-				overflow: hidden;
-			}
-			.onion-container img {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: contain;
-				transition: opacity 0.3s ease;
-			}
-			.onion-ghost {
-				opacity: 0.25;
-				filter: grayscale(1);
-			}
-			.onion-current {
-				opacity: 1;
-			}
-			.onion-controls {
-				margin-top: 1em;
-			}
-			.onion-controls input[type="range"] {
-				width: 100%;
-			}
-			.onion-ticks {
-				display: flex;
-				justify-content: space-between;
-				font-size: 0.8em;
-				color: #888;
-				padding: 0 2px;
-			}
-			.onion-details {
-				flex: 1 1 280px;
-				max-width: 350px;
-				padding: 1.5em;
-				background: #fafafa;
-				border-left: 3px solid #666;
-				border-radius: 4px;
-				min-height: 180px;
-			}
-			.onion-details h3 {
-				margin: 0 0 0.3em;
-			}
-			.detail-meta {
-				font-size: 0.85em;
-				color: #888;
-				margin-bottom: 0.8em;
-			}
-			#objCanvas {
-				width: 100%;
-				height: 500px;
-				border-radius: 6px;
-				overflow: hidden;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
- 
 		<!-- Wrapper -->
 			<div id="wrapper">
  
@@ -119,47 +42,89 @@
 						</div>
 					</section>
  
-				<!-- Main -->
-					<div id="main">
- 
-						<!-- Onion-skin design iteration comparison -->
-						<section id="onion-skin">
-						  <div class="inner">
-						    <header class="major"><h2>Design Iterations</h2></header>
- 
-						    <div class="onion-layout">
-						      <!-- Image stack -->
-						      <div class="onion-viewer">
-						        <div class="onion-container">
-						          <img src="" alt="Previous iteration" class="onion-ghost" id="onionGhost" />
-						          <img src="" alt="Current iteration" class="onion-current" id="onionCurrent" />
-						        </div>
- 
-						        <div class="onion-controls">
-						          <input type="range" id="onionSlider" min="0" max="5" value="0" step="1" />
-						          <div class="onion-ticks">
-						            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
-						          </div>
-						        </div>
-						      </div>
- 
-						      <!-- Details panel -->
-						      <div class="onion-details" id="onionDetails">
-						        <h3 id="detailTitle"></h3>
-						        <p class="detail-meta" id="detailMeta"></p>
-						        <p id="detailDesc"></p>
-						      </div>
-						    </div>
-						  </div>
-						</section>
- 
-						<!-- 3D Model Viewer -->
-						<section id="model-viewer">
-							<div class="inner">
-								<header class="major"><h2>Final 3D Model</h2></header>
-								<div id="objCanvas"></div>
-							</div>
-						</section>
+<!-- Design Iterations -->
+<section id="onion-skin">
+    <div class="inner">
+
+        <header class="major">
+            <h2>Design Iterations</h2>
+        </header>
+
+        <div class="onion-layout">
+
+            <!-- LEFT: ITERATION IMAGE -->
+            <div class="onion-viewer">
+
+                <div class="onion-container">
+                    <img
+                        id="onionPrevious"
+                        class="onion-image onion-previous"
+                        src="images/iteration-1.png"
+                        alt="Previous design iteration"
+                    />
+
+                    <img
+                        id="onionCurrent"
+                        class="onion-image onion-current"
+                        src="images/iteration-1.png"
+                        alt="Current design iteration"
+                    />
+                </div>
+
+                <!-- Slider -->
+                <div class="onion-controls">
+
+                    <input
+                        type="range"
+                        id="onionSlider"
+                        min="0"
+                        max="5"
+                        value="0"
+                        step="1"
+                    />
+
+                    <div class="onion-ticks">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: TECHNICAL INFORMATION -->
+            <div class="onion-details">
+
+                <div class="iteration-number" id="iterationNumber">
+                    ITERATION 1 / 6
+                </div>
+
+                <h3 id="detailTitle">
+                    Initial Design
+                </h3>
+
+                <p class="detail-meta" id="detailMeta">
+                    Baseline geometry
+                </p>
+
+                <div id="detailDesc">
+                    <p>
+                        Initial design concept used as the baseline
+                        for subsequent optimization.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 						<!-- Two -->
 							<section id="two" class="spotlights">
