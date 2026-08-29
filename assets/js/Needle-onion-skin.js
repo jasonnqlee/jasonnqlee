@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "images/NeedleCap/Iteration-0.png",
 
-            title: "Existing Design",
+            title: "Existing Baseline Design",
 
-            meta: "Baseline geometry",
+            meta: "Material: 0.05 cubic inches, Deflection: 0.2073 inches",
 
             description:
                 "<p>+ Baseline design from Insulet. Reliable and proven. Baseline for subsequent optimization.</p>"
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             title: "W design V1",
 
-            meta: "Material savings: 0.04099in^3 -18.02%, Stiffness Loss:xxx%",
+            meta: "Material Savings: 18.02%, Stiffness Loss:xxx%",
 
             description:
                 "<p>+ W-shape design keeps central area wide, while outer prongs help support it during linear feeding.</p>"
@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "images/NeedleCap/Iteration-2.png",
 
-            title: "Iteration 2",
+            title: "W design V2",
 
-            meta: "Geometry refinement",
+            meta: "Material Savings: 20.24%, Stiffness Loss:xxx%",
 
             description:
                 "<p>Further refinement of the geometry based on FEA results.</p>"
@@ -68,9 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "images/NeedleCap/Iteration-3.png",
 
-            title: "Iteration 3",
+            title: "2-Rib V1",
 
-            meta: "Structural optimization",
+            meta: "Material Savings: 23.10%, Stiffness Loss:xxx%",
 
             description:
                 "<p>Material was redistributed to improve stiffness-to-mass performance.</p>"
@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             image: "images/NeedleCap/Iteration-4.png",
 
-            title: "Iteration 5",
+            title: "2-Rib V2",
 
-            meta: "Final refinement",
+            meta: "Material Savings: 23.04%, Stiffness Loss:xxx%",
 
             description:
                 "<p>Additional refinement before the final design selection.</p>"
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             title: "Final Design",
 
-            meta: "Selected design",
+            meta: "Material Savings: 23.40%, Stiffness Loss:xxx%",
 
             description:
                 "<p>Final optimized geometry selected based on performance and manufacturability.</p>"
