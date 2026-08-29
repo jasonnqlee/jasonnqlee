@@ -6,9 +6,8 @@
 
 /* Image side */
 .onion-viewer {
-    flex: 1 1 60%;
+    flex: 0 0 calc(50% - 1.5em);
     min-width: 0;
-    max-width: 700px;
 }
 
 .onion-container {
@@ -58,9 +57,10 @@
 
 /* Technical information */
 .onion-details {
-    flex: 1 1 30%;
-    min-width: 250px;
+    flex: 0 0 calc(50% - 1.5em);
+    min-width: 0;
 
+    box-sizing: border-box;
     padding: 1.5em;
 
     background: #fafafa;
@@ -80,12 +80,12 @@
 
     .onion-viewer {
         width: 100%;
-        max-width: 700px;
+        flex: none;
     }
 
     .onion-details {
         width: 100%;
-        min-width: 0;
+        flex: none;
     }
 
 }
