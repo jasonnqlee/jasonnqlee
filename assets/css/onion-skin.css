@@ -1,8 +1,3 @@
-
-/* =========================================
-   DESIGN ITERATIONS / ONION SKIN
-   ========================================= */
-
 .onion-layout {
     display: flex;
     gap: 3em;
@@ -10,18 +5,17 @@
 }
 
 .onion-viewer {
-    flex: 0 1 50px;
-    max-width: 50px;
-    min-width: 0;
+    width: 300px !important;
+    max-width: 300px !important;
+    flex: none !important;
 }
 
 .onion-container {
+    width: 300px !important;
+    height: 300px !important;
+    aspect-ratio: auto !important;
     position: relative;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-
-    background: #f4f4f4;
-    border-radius: 6px;
+    background: red !important;
     overflow: hidden;
 }
 
@@ -29,10 +23,8 @@
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     object-fit: contain;
 }
 
@@ -43,9 +35,6 @@
 .onion-current {
     opacity: 1;
 }
-
-
-/* Slider */
 
 .onion-controls {
     margin-top: 1.5em;
@@ -58,59 +47,16 @@
 .onion-ticks {
     display: flex;
     justify-content: space-between;
-
     font-size: 0.8em;
     color: #888;
-
     padding: 0 2px;
 }
 
-
-/* Technical information */
-
 .onion-details {
     flex: 0 0 320px;
-
     padding: 1.5em;
-
     background: #fafafa;
-
     border-left: 3px solid #666;
-
     border-radius: 4px;
-
     min-height: 250px;
-}
-
-.iteration-number {
-    font-size: 0.75em;
-    letter-spacing: 0.15em;
-    color: #888;
-    margin-bottom: 0.75em;
-}
-
-.onion-details h3 {
-    margin: 0 0 0.5em;
-}
-
-.detail-meta {
-    font-size: 0.85em;
-    color: #888;
-    margin-bottom: 1em;
-}
-
-
-/* Mobile */
-
-@media screen and (max-width: 980px) {
-
-    .onion-layout {
-        flex-direction: column;
-    }
-
-    .onion-details {
-        width: 100%;
-        flex-basis: auto;
-    }
-
 }
