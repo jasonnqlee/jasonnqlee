@@ -10,7 +10,8 @@
 }
 
 .onion-viewer {
-    flex: 1;
+    flex: 0 1 500px;
+    max-width: 500px;
     min-width: 0;
 }
 
