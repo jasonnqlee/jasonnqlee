@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const iterations = [
 
         {
-            image: "images/Iteration-0.png",
+            image: "images/NeedleCap/Iteration-0.png",
 
             title: "Existing Design",
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/Iteration-1.png",
+            image: "images/NeedleCap/Iteration-1.png",
 
             title: "Iteration 1",
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/Iteration-2.png",
+            image: "images/NeedleCap/Iteration-2.png",
 
             title: "Iteration 2",
 
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/Iteration-3.png",
+            image: "images/NeedleCap/Iteration-3.png",
 
             title: "Iteration 3",
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/Iteration-4.png",
+            image: "images/NeedleCap/Iteration-4.png",
 
             title: "Iteration 5",
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/Iteration-5.png",
+            image: "images/NeedleCap/Iteration-5.png",
 
             title: "Final Design",
 
