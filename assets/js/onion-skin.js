@@ -30,21 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const iterations = [
 
         {
-            image: "images/iteration-1.png",
+            image: "images/Iteration-0.png",
 
-            title: "Initial Design",
+            title: "Existing Design",
 
             meta: "Baseline geometry",
 
             description:
-                "<p>Initial design concept used as the baseline for subsequent optimization.</p>"
+                "<p>Existing design used by Insulet. Baseline for subsequent optimization.</p>"
         },
 
 
         {
-            image: "images/iteration-2.png",
+            image: "images/Iteration-1.png",
 
-            title: "Iteration 2",
+            title: "Iteration 1",
 
             meta: "First geometry revision",
 
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/iteration-3.png",
+            image: "images/Iteration-2.png",
 
-            title: "Iteration 3",
+            title: "Iteration 2",
 
             meta: "Geometry refinement",
 
@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/iteration-4.png",
+            image: "images/Iteration-3.png",
 
-            title: "Iteration 4",
+            title: "Iteration 3",
 
             meta: "Structural optimization",
 
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/iteration-5.png",
+            image: "images/Iteration-4.png",
 
             title: "Iteration 5",
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         {
-            image: "images/iteration-6.png",
+            image: "images/Iteration-5.png",
 
             title: "Final Design",
 
