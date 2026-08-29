@@ -37,19 +37,24 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Baseline geometry",
 
             description:
-                "<p>Existing design used by Insulet. Baseline for subsequent optimization.</p>"
+                "<p>+ Baseline design from Insulet. Reliable and proven. Baseline for subsequent optimization.</p>"
         },
 
 
         {
             image: "images/NeedleCap/Iteration-1.png",
 
-            title: "Iteration 1",
+            title: "W design V1",
 
-            meta: "First geometry revision",
+            meta: "Material savings: 0.04099in^3 -18.02%, Stiffness Loss:xxx%",
 
             description:
-                "<p>Modified geometry to reduce material usage while maintaining structural performance.</p>"
+                "<p>+ W-shape design keeps central area wide, while outer prongs help support it during linear feeding
++ Avoids mold fill ability issues 
++ Back area has some cuts as material cut there seems less impactful to overall stiffness (due to fixed points at stakes)
+
+- Concerned that it could tip over in the linear rail, which could lead to jams.
+</p>"
         },
 
 
