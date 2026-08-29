@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material Savings: 23.40%, Stiffness Loss: 23.40%",
 
             description:
-                "<p>Final optimized geometry selected based on performance and manufacturability.</p> +Reworked the tip and kept a thicker outer ring maintaining strength better at the tip, and in a wider range of forces being applied</p>
+                "<p>Final optimized geometry selected based on performance and manufacturability.</p>
                 "
         }
 
