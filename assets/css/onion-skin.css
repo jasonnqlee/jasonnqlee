@@ -5,17 +5,17 @@
 }
 
 .onion-viewer {
-    width: 300px !important;
-    max-width: 300px !important;
+    width: 800px !important;
+    max-width: 800px !important;
     flex: none !important;
 }
 
 .onion-container {
-    width: 300px !important;
-    height: 300px !important;
+    width: 800px !important;
+    height: 800px !important;
     aspect-ratio: auto !important;
     position: relative;
-    background: red !important;
+    background:  #f4f4f4;
     overflow: hidden;
 }
 
