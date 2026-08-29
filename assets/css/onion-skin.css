@@ -4,25 +4,30 @@
     align-items: flex-start;
 }
 
+/* Image side */
 .onion-viewer {
-    flex: 0 0 400px;
-    width: 400px;
+    flex: 1 1 60%;
+    min-width: 0;
+    max-width: 700px;
 }
 
 .onion-container {
     width: 100%;
-    height: 400px;
+    aspect-ratio: 1 / 1;
     position: relative;
     background: #f4f4f4;
     overflow: hidden;
 }
 
+/* Images */
 .onion-image {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
+
     object-fit: contain;
 }
 
@@ -34,6 +39,7 @@
     opacity: 1;
 }
 
+/* Slider */
 .onion-controls {
     margin-top: 1.5em;
 }
@@ -50,11 +56,36 @@
     padding: 0 2px;
 }
 
+/* Technical information */
 .onion-details {
-    flex: 0 0 320px;
+    flex: 1 1 30%;
+    min-width: 250px;
+
     padding: 1.5em;
-    background: transparent;
+
+    background: #fafafa;
     border-left: 3px solid #666;
-    border-radius: 0;
+
+    border-radius: 4px;
     min-height: 250px;
+}
+
+
+/* Smaller screens */
+@media screen and (max-width: 980px) {
+
+    .onion-layout {
+        flex-direction: column;
+    }
+
+    .onion-viewer {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .onion-details {
+        width: 100%;
+        min-width: 0;
+    }
+
 }
