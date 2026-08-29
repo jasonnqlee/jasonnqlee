@@ -37,8 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material: 0.05 cubic inches, Deflection: 0.2073 inches",
 
             description:
-                "<p>+ Baseline design from Insulet. Reliable and proven. Baseline for subsequent optimization.</p>
-                "
+                "<p>+ Baseline design from Insulet. Reliable and proven. Baseline for subsequent optimization.</p>"
         },
 
 
@@ -50,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material Savings: 18.02%, Stiffness Loss: 21.71%",
 
             description:
-                "<p>+ W-shape design keeps central area wide, while outer prongs help support it during linear feeding.</p>
-                "
+                "<p>+ W-shape design keeps central area wide, while outer prongs help support it during linear feeding.</p>"
         },
 
 
@@ -63,8 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material Savings: 20.24%, Stiffness Loss: 22.86%",
 
             description:
-                "<p>+ Extended the side rails and deepened W-shape design while also thinning them out to save more material.</p>
-                "
+                "<p>+ Extended the side rails and deepened W-shape design while also thinning them out to save more material.</p>"
         },
 
 
@@ -76,8 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material Savings: 23.10%, Stiffness Loss: 25.04%",
 
             description:
-                "<p>+ Moved to 2-rib design to increase flat pickable area for top side vacuum pick system.</p>
-                "
+                "<p>+ Moved to 2-rib design to increase flat pickable area for top side vacuum pick system.</p>"
         },
 
 
@@ -89,8 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material Savings: 23.04%, Stiffness Loss: 24.50%",
 
             description:
-                "<p>+ Added a chamfer outside to smoothen transitions. Between upper section and lower section (see photo below).</p>
-                "
+                "<p>+ Added a chamfer outside to smoothen transitions. Between upper section and lower section (see photo below).</p>"
         },
 
 
@@ -102,8 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material Savings: 23.40%, Stiffness Loss: 23.40%",
 
             description:
-                "<p>Final optimized geometry selected based on performance and manufacturability.</p>
-                "
+                "<p>Final optimized geometry selected based on performance and manufacturability.</p>"
         }
 
     ];
