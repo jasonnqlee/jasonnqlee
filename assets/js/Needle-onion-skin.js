@@ -49,11 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
             meta: "Material savings: 0.04099in^3 -18.02%, Stiffness Loss:xxx%",
 
             description:
-                "<p>+ W-shape design keeps central area wide, while outer prongs help support it during linear feeding
-+ Avoids mold fill ability issues 
-+ Back area has some cuts as material cut there seems less impactful to overall stiffness (due to fixed points at stakes)
-
-- Concerned that it could tip over in the linear rail, which could lead to jams.
+                "<p>+ W-shape design keeps central area wide, while outer prongs help support it during linear feeding \N + Avoids mold fill ability issues 
 </p>"
         },
 
